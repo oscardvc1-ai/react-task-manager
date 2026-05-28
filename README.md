@@ -1,16 +1,48 @@
-# React + Vite
+# React Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern task management application built with React.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://(https://react-task-manager-phi-two.vercel.app/)
 
-## React Compiler
+## 📌 Description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Task Manager is a simple and responsive web application that allows users to create, complete, filter and delete tasks.
 
-## Expanding the ESLint configuration
+The project is focused on React fundamentals, component architecture, state management with hooks and data persistence using LocalStorage.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies
+
+- React
+- JavaScript
+- Vite
+- HTML5
+- CSS3
+- LocalStorage
+- Git
+- GitHub
+- Vercel
+
+## ✨ Features
+
+- Add new tasks
+- Mark tasks as completed
+- Delete tasks
+- Filter tasks by status
+- Persist tasks in LocalStorage
+- Responsive design
+- Clean component structure
+
+## 📁 Project Structure
+
+```txt
+src/
+├── components/
+│   ├── TaskFilter.jsx
+│   ├── TaskForm.jsx
+│   ├── TaskItem.jsx
+│   └── TaskList.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
