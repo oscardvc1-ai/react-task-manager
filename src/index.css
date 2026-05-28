@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.task-card {
+  width: 100%;
+  max-width: 720px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.task-card h1 {
+  color: #38bdf8;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.task-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #020617;
+  color: #e5e7eb;
+  outline: none;
+}
+
+.task-form input:focus {
+  border-color: #38bdf8;
+}
+
+.task-form button,
+.task-filter button,
+.delete-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #1e293b;
+  color: #e5e7eb;
+  transition: 0.2s ease;
+}
+
+.task-form button {
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+}
+
+.task-form button:hover,
+.task-filter button:hover,
+.delete-btn:hover {
+  transform: translateY(-2px);
+}
+
+.task-filter {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.task-filter .active {
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+}
+
+.task-list {
+  display: grid;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.task-item label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  word-break: break-word;
+}
+
+.task-item input {
+  accent-color: #38bdf8;
+}
+
+.completed {
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  background: #7f1d1d;
+}
+
+.empty-message {
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .task-card {
+    padding: 24px;
+  }
+
+  .task-card h1 {
+    font-size: 2rem;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
